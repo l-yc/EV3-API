@@ -1,6 +1,8 @@
 ## Copyright (c) 2015 Ahmad Fatoum
 CROSS_COMPILE ?= C:/CSLite/bin/arm-none-linux-gnueabi-
 PREFIX ?= $(CROSS_COMPILE)
+override PREFIX = /home/lyc/EV3/arm-2009q1/bin/arm-none-linux-gnueabi-
+
 CC = $(PREFIX)gcc
 AR = $(PREFIX)ar
 SRCS = $(wildcard *.c)
